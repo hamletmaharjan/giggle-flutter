@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:giggle/drawer.dart';
 void main() {
   runApp(new MaterialApp(
     title: "giggles",
@@ -42,6 +43,7 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(
         title: const Text('giggle'),
       ),
+      drawer: NavDrawer(),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
